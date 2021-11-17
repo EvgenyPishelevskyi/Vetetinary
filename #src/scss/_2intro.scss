@@ -7,18 +7,18 @@
    padding: 0px 75px;
    display: flex;
 
-   @media (max-width: $md2 + px) {
+   @media (max-width: ($md2 + px)) {
       padding: 0px 20px;
    }
 
-   @media (max-width: $md3 + px) {
+   @media (max-width: ($md3 + px)) {
       flex-direction: column;
       text-align: center;
    }
 }
 
 .intro__info {
-   h1 {
+   .intro-info__title {
       padding: 0px 0px 64px 0px;
       font-family: Roboto;
       @include adaptive-font (85, 16);
@@ -30,18 +30,18 @@
       }
    }
 
-   p {
+   .intro-info__descr {
       width: 72%;
       @include adaptive-font (20, 16);
       line-height: calc(28 / 20);
       color: $whiteColor;
       background-color: $mainColor;
 
-      @media (max-width: $md2 + px) {
+      @media (max-width: ($md2 + px)) {
          width: 85%;
       }
 
-      @media (max-width: $md3 + px) {
+      @media (max-width: ($md3 + px)) {
          padding: 0px 0px 20px 0px;
          width: 100%;
       }
@@ -50,57 +50,45 @@
 
 .intro__pic {
    padding: 40px 0px 0px 0px;
-   transition: all 0.3s ease;
+   transition: $transition;
 }
 
 .intro__blocks {
-   max-width: 1120px;
    padding: 0px 13px 73px 13px;
-   display: block;
    margin: 0 auto;
    display: flex;
    align-items: stretch;
    position: relative;
    top: -81px;
+   max-width: 1120px;
 
-   @media (max-width: $md2 + px) {
+   @media (max-width: ($md2 + px)) {
+      @include center;
       display: flex;
       justify-content: center;
    }
 
-   @media (max-width: $md3 + px) {
+   @media (max-width: ($md3 + px)) {
       padding: 0px 13px 0px 13px;
    }
 
-   @media (max-width: $md4 + px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+   @media (max-width: ($md4 + px)) {
+      @include column-center;
    }
 }
 
 ._block__item {
    padding: 47px 10px 47px 10px;
    margin-right: 85px;
-   display: flex;
-   align-items: center;
+   height: 250px;
+   @include center;
    background-color: #fff;
-   transition: all 0.3s ease;
+   transition: $transition;
    cursor: pointer;
 
    &:hover {
       background-color: $descrColor;
       border-radius: 100px;
-
-      ._item__info {
-         span {
-            color: $whiteColor;
-         }
-
-         p {
-            color: $whiteColor;
-         }
-      }
    }
 
    &:last-child {
@@ -111,19 +99,16 @@
       margin-right: 50px;
    }
 
-   @media (max-width: $md2 + px) {
+   @media (max-width: ($md2 + px)) {
       padding: 47px 10px 47px 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
       margin-right: 20px;
+      @include column-center;
+      text-align: center;
    }
 
 
-   @media (max-width: $md4 + px) {
-      margin-right: 0px;
-      margin-bottom: 20px;
+   @media (max-width: ($md4 + px)) {
+      margin:0px 0px 20px 0px;
       border: 2px solid $descrColor;
 
       &:last-child {
@@ -133,19 +118,17 @@
 }
 
 ._item__pic {
-   margin-left: 18px;
-   margin-right: 51px;
+   margin:0px 51px 0px 18px;
 }
 
 ._item__info {
    padding: 0px 100px 0px 0px;
 
-   @media (max-width: $md2 + px) {
+   @media (max-width: ($md2 + px)) {
       padding: 0px 0px 0px 0px;
    }
 
-   span {
-      display: block;
+   .item-info__name {
       padding: 0px 0px 10px 0px;
       font-family: Roboto;
       @include adaptive-font (37, 16);
@@ -153,14 +136,10 @@
       color: $titleColor;
    }
 
-   p {
+   .item-info__descr {
       width: 100%;
       @include adaptive-font (20, 16);
       line-height: calc(27 / 20);
       color: $descrColor;
    }
-}
-
-.items {
-   padding: 10px 0px 0px 0px;
 }

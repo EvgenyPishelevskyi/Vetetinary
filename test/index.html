@@ -5,11 +5,9 @@
  	<meta charset="UTF-8">
  	<meta name="format-detection" content="telephone=no">
  	<link rel="stylesheet" href="css/style.min.css">
- 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
  	<link rel="shortcut icon" href="favicon.ico">
  	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
  	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
- 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
  </head>
 
@@ -37,13 +35,13 @@
       <a href="" class="button">Log in</a>
    </nav>
 </div>
-			<ul class="header__list">
-				<li><a href="">Veterinarians</a></li>
-				<li><a href="">Hospitals</a></li>
-				<li><a href="">Why IndeVets?</a></li>
+			<ul class="header__list header-list">
+				<li class="header-list__item"><a href="#" class="header-list__link">Veterinarians</a></li>
+				<li class="header-list__item"><a href="#" class="header-list__link">Hospitals</a></li>
+				<li class="header-list__item"><a href="#" class="header-list__link">Why IndeVets?</a></li>
 			</ul>
-			<div class="header__button">
-				<a href="" class="button">Logi1n</a>
+			<div class="header__button header-button">
+				<a href="" class="header-button__link">Logi1n</a>
 			</div>
 		</div>
 	</div>
@@ -51,9 +49,9 @@
 		<main>
 			<section class="intro">
    <div class="intro__container _container">
-      <div class="intro__info">
-         <h1>Veterinary staffing done right.</h1>
-         <p>IndeVets is on a mission to make veterinary medicine better. We unite the nation’s top veterinarians and
+      <div class="intro__info intro-info">
+         <h1 class="intro-info__title">Veterinary staffing done right.</h1>
+         <p class="intro-info__descr">IndeVets is on a mission to make veterinary medicine better. We unite the nation’s top veterinarians and
             animal hospitals to deliver what matters most in animal care –– happy, healthy doctors performing at their
             best.</p>
       </div>
@@ -67,9 +65,9 @@
       <div class="_item__pic">
          <span class="_icon-veterinars"></span>
       </div>
-      <div class="_item__info">
-         <span>Veterinarians</span>
-         <p>Apply to become an IndeVet</p>
+      <div class="_item__info item-info">
+         <span class="item-info__name">Veterinarians</span>
+         <p class="item-info__descr">Apply to become an IndeVet</p>
       </div>
    </div>
    <div class="_block__item _items element_animation">
@@ -77,31 +75,31 @@
          <span class="_icon-hospitals"></span>
       </div>
       <div class="_item__info">
-         <span>Hospitals</span>
-         <p>Become an IndeVets partnerssssssss</p>
+         <span class="item-info__name">Hospitals</span>
+         <p class="item-info__descr">Become an IndeVets partner</p>
       </div>
    </div>
 </div>
 			<section class="works">
    <div class="works__container _container">
-      <div class="works__title">
-         <span>
+      <div class="works__title work-title">
+         <span class="work-title__slogan">
             Let’s start at the beginning
          </span>
-         <h2>How IndeVets Works</h2>
+         <h2 class="work-title__title">How IndeVets Works</h2>
       </div>
       <div class="works__items _item">
          <div class="_item__work">
-            <div class="_work__pic">
-               <div class="z element_animation">
+            <div class="_work__pic work-pic">
+               <div class="element_animation work-pic__img">
                   <span class="_icon-baraban">
                   </span>
                </div>
             </div>
             <div class="_work__info">
-               <span>Step one...</span>
-               <h3>We hire great vets.</h3>
-               <p>Not just any doctor can become an IndeVet. We thoroughly vet and hire only the best, highly qualified
+               <span class="work-info__step">Step one...</span>
+               <h3 class="work-info__name">We hire great vets.</h3>
+               <p class="work-info__descr">Not just any doctor can become an IndeVet. We thoroughly vet and hire only the best, highly qualified
                   doctors. They become a part of our team, earn market-leading pay and benefits, and gain the freedom to
                   choose when and where they work.</p>
             </div>
@@ -110,15 +108,15 @@
       <div class="works__items _item ">
          <div class="_item__work truba">
             <div class="_work__info">
-               <span>Next...</span>
-               <h3>We partner with the best workplaces.</h3>
-               <p>We’ve built partnerships with more than 800 forward-thinking, best-in-class hospitals. We expect a lot
+               <span class="work-info__step">Next...</span>
+               <h3 class="work-info__name">We partner with the best workplaces.</h3>
+               <p class="work-info__descr">We’ve built partnerships with more than 800 forward-thinking, best-in-class hospitals. We expect a lot
                   from our vets, so the same applies to our hospitals. We partner with hospitals that not only have high
                   medical standards, but also have a commitment to maintaining a healthy workplace for staff and
                   patients.</p>
             </div>
-            <div class="_work__pic">
-               <div class="z element_animation">
+            <div class="_work__pic work-pic">
+               <div class="element_animation work-pic__img">
                   <span class="_icon-truba"></span>
                </div>
             </div>
@@ -126,15 +124,15 @@
       </div>
       <div class="works__items _item">
          <div class="_item__work _work">
-            <div class="_work__pic">
-               <div class="z element_animation">
+            <div class="_work__pic work-pic">
+               <div class="element_animation work-pic__img">
                   <span class="_icon-friends"></span>
                </div>
             </div>
-            <div class="_work__info">
-               <span>The result?</span>
-               <h3>Happy vets. Happy hospitals. Better medicine.</h3>
-               <p>When doctors are in control of their schedules, they’re happier. Same goes for hospital teams who can
+            <div class="_work__info work-info">
+               <span class="work-info__step">The result?</span>
+               <h3 class="work-info__name">Happy vets. Happy hospitals. Better medicine.</h3>
+               <p class="work-info__descr">When doctors are in control of their schedules, they’re happier. Same goes for hospital teams who can
                   breathe easier about their staffing. Together, our doctors and hospital partners are making the world
                   of veterinary medicine a better, happier place.</p>
             </div>
@@ -144,19 +142,19 @@
 </section>
 			<section class="mission">
    <div class="mission__container _container">
-      <div class="mission__pic element_animation" data-aos="zoom-in-left">
+      <div class="mission__pic element_animation">
          <div>
             <span class="_icon-vets"></span>
          </div>
       </div>
-      <div class="mission__info">
-         <span data-aos="fadeInUp">Who We Are</span>
-         <h2 data-aos="fadeInUp">Our Mission</h2>
-         <p data-aos="fadeInUp">Oиr team is united by a mission to make veterinary medicine better. We’ve been through the long rotations,
+      <div class="mission__info mission-info">
+         <span class="mission-info__slogan">Who We Are</span>
+         <h2 class="mission-info__title">Our Mission</h2>
+         <p class="mission-info__descr">Oиr team is united by a mission to make veterinary medicine better. We’ve been through the long rotations,
             the office drama, аand the last-minute schedule changes. It drove the joy out of our jobs and, more
             importantly, out of our lives. So we took it upon ourselves to make a change.</p>
-         <div>
-            <a href="" data-aos="zoom-in">Why IndeVets?</a>
+         <div class="mission-info__question question">
+            <a href="#" class="question__link">Why IndeVets?</a>
          </div>
 
       </div>
@@ -164,16 +162,16 @@
 </section>
 			<section class="sounds">
    <div class="sounds__container _container">
-      <div class="sounds__pic" data-aos="slide-right">
+      <div class="sounds__pic">
          <div>
             <span class="_icon-bike"></span>
          </div>
       </div>
-      <div class="sounds__info">
-         <h2 data-aos="fadeInUp">Sounds pretty good, right? Let’s do this.</h2>
-         <div data-aos="fadeInUp">
-            <p>I want to be an IndeVet. Take me to the application page!</p>
-            <p>
+      <div class="sounds__info sounds-info">
+         <h2 class="sounds-info__title">Sounds pretty good, right? Let’s do this.</h2>
+         <div class="sounds-info__offer offer">
+            <p class="offer__descr">I want to be an IndeVet. Take me to the application page!</p>
+            <p class="offer__descr">
                We want to be one of your awesome hospital partners.
             </p>
          </div>
@@ -186,7 +184,7 @@
 		<div class="footer__left">
 			<div class="footer__lists _list">
 				<div class="_lists">
-					<ul class="_list__footer">
+					<ul class="_list__footer list-footer">
 						<li class="main-item"><a href="" class="main-link">Veterinarians</a></li>
 						<li class="link"><a href="">Explore IndeVets</a></li>
 						<li class="link"><a href="">Become an IndeVet</a></li>
@@ -231,24 +229,10 @@
 </footer>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-</script>  -->
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
-<!-- <script src="js/jquery.waypoints.js"></script> -->
 <script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
-<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  -->
-<!-- <script>
-   AOS.init({
-      offset: 300,
-      duration: 300,
-      easing: "ease-in-sine",
-      delay: 100,
-      once: false,
-      placement: "top-top",
-   });
-</script> -->
+
 
 </body>
 

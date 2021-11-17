@@ -9,29 +9,27 @@
       padding: 0px 65px;
    }
 
-   @media (max-width: $md3 + px) {
+   @media (max-width: ($md3 + px)) {
       padding: 0px 15px;
    }
-
 }
 
 .works__title {
-   text-align: center;
    padding: 0px 0px 128px 0px;
+   text-align: center;
 
-   @media (max-width: $md3 + px) {
+   @media (max-width: ($md3 + px)) {
       padding: 0px 0px 60px 0px;
    }
 
-   span {
-      display: block;
+   .work-title__slogan {
       padding: 18px 22px 0px 0px;
       @include adaptive-font (22, 16);
       line-height: calc(30 / 22);
       font-weight: 700;
    }
 
-   h2 {
+   .work-title__title {
       padding: 0px 0px 10px 0px;
       font-family: Roboto;
       @include adaptive-font (55, 16);
@@ -41,31 +39,24 @@
    }
 }
 
-
 .works__items {
-   display: flex;
-   flex-direction: column;
+   @include column-center;
 }
-
-
 
 ._item__work {
    padding: 0px 0px 112px 0px;
    display: flex;
-   align-items: flex-start;
-   justify-content: space-between;
+   @include start-between;
 
-   @media (max-width: $md2 + px) {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+   @media (max-width: ($md2 + px)) {
+      @include column-center;
    }
 }
 
 .truba {
    display: flex;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       flex-direction: column-reverse;
    }
 }
@@ -74,18 +65,15 @@
    padding: 0px 0px 0px 0px;
 }
 
-
 ._work__pic {
    flex: 0 1 20%;
 
-   @media (max-width: $md3 + px) {
+   @media (max-width: ($md3 + px)) {
       padding: 0px 0px 20px 0px;
    }
 
-   .z {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+   .work-pic__img {
+      @include center;
       width: 285px;
       height: 285px;
       background: #D3DAC3;
@@ -98,49 +86,45 @@
    padding: 17px 0px 0px 57px;
    flex: 0 1 63.6%;
 
-   @media (max-width: $md2 + px) {
+   @media (max-width: ($md2 + px)) {
       padding: 0px 0px 0px 0px;
       text-align: center;
    }
 
-   span {
+   .work-info__step {
       display: block;
       padding: 0px 0px 10px 0px;
-      font-family: Nunito Sans;
       @include adaptive-font (20, 16);
       line-height: calc(27 / 20);
       font-weight: 700;
       color: rgba(121, 139, 86, 1);
    }
 
-   h3 {
+   .work-info__name {
       font-family: Roboto;
       @include adaptive-font (40, 16);
       line-height: calc(47 / 40);
       font-weight: 700;
       color: $titleColor;
 
-      @media (max-width: $md3 + px) {
+      @media (max-width: ($md3 + px)) {
          padding: 0px 0px 20px 0px;
       }
-
    }
 
-   p {
+   .work-info__descr {
       width: 91%;
       @include adaptive-font (16, 16);
       line-height: calc(29 / 16);
 
-      @media (max-width: $md3 + px) {
+      @media (max-width: ($md3 + px)) {
          width: 95%;
-
       }
-
    }
 }
 
 .element-show {
-   transition:all 1s ease;
+   transition: all 1s ease;
    border: 2px solid $titleColor;
    box-shadow: 0px 0px 30px $titleColor;
 }

@@ -6,14 +6,13 @@
 
 .mission__container {
    padding: 0px 76px;
-   display: flex;
-   justify-content: space-between;
+   @include center-between;
 
    @media (max-width: 1100px) {
       padding: 0px 20px;
    }
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       flex-direction: column-reverse;
       align-items: center;
       text-align: center;
@@ -23,24 +22,23 @@
 .mission__pic {
    padding: 3px 0px 0px 0px;
    flex: 0 1 40%;
-
 }
 
 .mission__info {
    flex: 0 1 48%;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 40px 0px;
    }
 
-   span {
+   .mission-info__slogan {
       @include adaptive-font (22, 16);
       line-height: calc(30 / 22);
       font-weight: 700;
       color: $descrColor;
    }
 
-   h2 {
+   .mission-info__title {
       padding: 0px 0px 38px 0px;
       font-family: Roboto;
       @include adaptive-font (55, 16);
@@ -48,26 +46,26 @@
       font-weight: 700;
    }
 
-   p {
+   .mission-info__descr {
       padding: 0px 0px 61px 0px;
       display: block;
       width: 96%;
       @include adaptive-font (18, 16);
       line-height: calc(32 / 18);
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          width: 100%;
       }
    }
 
-   div {
+   .mission-info__question {
       padding-left: 31px;
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          padding: 0px 0px 0px 0px;
-       }
+      }
 
-      a {
+      .question__link {
          display: inline-block;
          padding: 7px;
          @include adaptive-font (16, 16);
@@ -75,31 +73,11 @@
          color: $descrColor;
          border: 1px solid $descrColor;
 
-         &:hover{
+         &:hover {
             background-color: $mainColor;
             border: 1px solid $mainColor;
             color: $whiteColor;
          }
       }
-   }
-}
-
-
-@keyframes skiri {
-
-   0% {
-      transform:translateY(10px);
-   }
-
-   25% {
-      transform: rotate(45deg)
-   }
-
-   50% {
-      transform: rotate(15deg)
-   }
-
-   100% {
-      transform: rotate(0deg);
    }
 }
